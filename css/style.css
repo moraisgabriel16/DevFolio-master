@@ -1,0 +1,384 @@
+:root {
+  --main-color: #0078ff;
+  --font-size: 3.5rem;
+  --font-weight: bold;
+  --text: uppercase;
+  --bg-color: #f5f5f5;
+  --letters: 21;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*  START  HEADER SECTION */
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../dimages/v882-aew-59-b\ copiar.jpg") no-repeat center center fixed;
+  background-position: center center;
+  background-size: cover;
+}
+#home .home-content h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 2;
+}
+#home .home-content .home-animation {
+  font-family: "Roboto Mono", monospace;
+}
+#home .home-content .home-animation h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  position: relative;
+  width: 0px;
+  overflow: hidden;
+  animation: typing 5s steps(var(--letters)) infinite normal;
+  white-space: nowrap;
+}
+#home .home-content .home-animation h3::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: white;
+  right: 0px;
+  top: 0;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  50%,
+  70% {
+    width: calc(var(--letters) * 24px);
+  }
+}
+
+/*  END  HEADER SECTION */
+
+/* START  THE ABOUT SECTION */
+#about {
+  background-color: var(--bg-color);
+}
+#about .about-cont p {
+  color: #4e4e4e;
+  line-height: 1.3;
+}
+#about .about-cont span {
+  color: black;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+#about .me h2 {
+  position: relative;
+}
+#about .me h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+/*   THE ABOUT SECTION */
+
+/*START THE SERVICES SECTION */
+
+#services {
+  background-color: var(--bg-color);
+}
+#services .container {
+  background-color: var(--bg-color);
+}
+#services p {
+  color: #4e4e4e;
+}
+#services .services-content h2 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  text-transform: var(--text);
+}
+#services .services-content p {
+  position: relative;
+}
+#services .services-content p::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 47.5%;
+  width: 5%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+#services .icons i {
+  width: 6.5rem;
+  height: 6.5rem;
+  background-color: white;
+  font-size: 2.5rem;
+  border: solid 6px var(--main-color);
+  border-radius: 50%;
+  transition: background-color 0.5s ease, color 0.5s ease, border 0.5s ease;
+}
+#services .icons i:hover {
+  color: white;
+  background-color: var(--main-color);
+  border: solid 6px #cde1f8;
+}
+
+/* END  THE SERVICES SECTION */
+
+/* START THE COUNTER  SECTION */
+#counter {
+  background: linear-gradient(rgba(10, 94, 190, 0.5), rgba(10, 94, 190, 0.5)),
+    url("../dimages/counters-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 500px;
+}
+#counter i {
+  width: 6rem;
+  height: 6rem;
+  background-color: transparent;
+  font-size: 2rem;
+  border: solid 7px #cde1f8;
+  border-radius: 50%;
+  color: white;
+}
+
+/* END THE COUNTER SECTION */
+
+/* START THE PORTFOLIO SECTION */
+
+#portfolio {
+  background-color: var(--bg-color);
+}
+#portfolio p {
+  color: #4e4e4e;
+}
+
+#portfolio .portfolio-content h2 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  text-transform: var(--text);
+}
+#portfolio .portfolio-content p {
+  position: relative;
+}
+#portfolio .portfolio-content p::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 47.5%;
+  width: 5%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+#portfolio .port {
+  color: var(--main-color);
+}
+
+#portfolio .card {
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: auto;
+}
+
+#portfolio .card:hover img {
+  transform: scale(1.1);
+}
+
+/* END THE PORTFOLIO SECTION */
+
+/* START THE TESTIMONIAL SECTION */
+#test {
+  background: linear-gradient(rgba(11, 49, 93, 0.5), rgba(10, 94, 190, 0.5)),
+    url("../dimages/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+#test .test-info img {
+  width: 200px;
+  height: 200px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+#test span {
+  font-size: 2rem;
+  color: white;
+  line-height: 1.2;
+}
+#test p {
+  line-height: 1.3;
+}
+
+/* END THE TESTIMONIAL SECTION */
+
+/* START THE BLOG SECTION */
+
+#blog {
+  background-color: var(--bg-color);
+}
+#blog p {
+  color: #4e4e4e;
+}
+
+#blog .blog-content h2 {
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  text-transform: var(--text);
+}
+#blog .blog-content p {
+  position: relative;
+}
+#blog .blog-content p::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 47.5%;
+  width: 5%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+#blog h5 {
+  font-size: 1.5rem;
+}
+#blog .left img {
+  width: 40px;
+
+  border-radius: 50%;
+}
+#blog .card-body span {
+  background-color: var(--main-color);
+  font-size: 1.25rem;
+}
+
+/* END THE BLOG  SECTION */
+
+/* START  THE  CONTACT SECTION */
+
+#contact {
+  background: linear-gradient(rgba(10, 94, 190, 0.5), rgba(10, 94, 190, 0.5)),
+    url("../dimages/overlay-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#contact .btn {
+  border: solid 5px transparent;
+  transition: border-color 0.5s ease;
+  background-color: var(--main-color);
+}
+#contact h3 {
+  font-size: 2rem;
+}
+#contact .btn:hover {
+  border-color: #cde1f8;
+}
+#contact .contact-info p {
+  color: #4e4e4e4e;
+  line-height: 1.8;
+}
+#contact h3 {
+  position: relative;
+}
+#contact h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 4px;
+  background-color: var(--main-color);
+}
+
+#contact .icons i {
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  border: solid 4px var(--main-color);
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease;
+}
+
+#contact .icons i:hover {
+  background-color: var(--main-color);
+  color: white;
+  border: solid 2px #cde1f8;
+}
+#contact .list i {
+  color: #0078ff;
+  font-size: 1.5rem;
+}
+#contact .list span {
+  color: #4e4e4e;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+/* END THE  CONTACT SECTION */
+
+.footer {
+  background-color: var(--bg-color);
+  color: #4e4e4e;
+  font-size: 1.25rem;
+}
+
+/*  START  THE NAVBAR */
+.nav-item a {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: white;
+}
+
+.NAV a {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.5sec ease;
+}
+.NAV a:hover {
+  color: white;
+}
+
+.nav-item ul li a {
+  color: #4e4e4e;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: color 0.5sec ease;
+}
+
+.nav-item ul li a:hover {
+  color: white;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.nav-link {
+  transition: color 0.5sec ease;
+}
+.nav-link:hover {
+  color: #4e4e4e;
+}
+
+/* END  THE NAVBAR */
